@@ -1,0 +1,61 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0d0d0f;
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+.app { max-width: 1100px; margin: 0 auto; padding: 0 16px 40px; }
+
+header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 0 16px; border-bottom: 1px solid #1e2030;
+  flex-wrap: wrap; gap: 12px;
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.logo-icon { font-size: 28px; }
+h1 { font-size: 22px; font-weight: 700; color: #fff; }
+.tag { font-size: 11px; color: #64748b; background: #1e2030; padding: 3px 8px; border-radius: 4px; }
+.stats { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.warn { color: #f59e0b; font-size: 12px; }
+.counter { color: #22d3ee; font-size: 12px; font-family: monospace; }
+.ts { color: #64748b; font-size: 11px; }
+.refresh { color: #475569; font-size: 11px; }
+.refresh-btn { background: #1e293b; border: 1px solid #334155; color: #94a3b8; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+.refresh-btn:hover { background: #243447; color: #e2e8f0; }
+
+nav { display: flex; gap: 4px; padding: 16px 0 12px; border-bottom: 1px solid #1e2030; }
+nav button { background: none; border: none; color: #64748b; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 500; }
+nav button:hover { background: #1e2030; color: #cbd5e1; }
+nav button.active { background: #1e293b; color: #fff; }
+
+.error { margin: 16px 0; padding: 12px 16px; background: #1a1008; border: 1px solid #713f12; border-radius: 8px; color: #fbbf24; font-size: 13px; }
+.error a { color: #f59e0b; }
+.error code { background: #2d1b04; padding: 1px 4px; border-radius: 3px; font-size: 12px; }
+.loading { text-align: center; padding: 60px; color: #475569; font-size: 16px; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+thead th { text-align: left; padding: 10px 12px; font-size: 11px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #1e2030; }
+.token-row { border-bottom: 1px solid #111218; }
+.token-row:hover { background: #111520; }
+.token-row td { padding: 10px 12px; vertical-align: middle; }
+
+.rank { color: #475569; font-size: 12px; width: 40px; }
+.token-col { display: flex; align-items: center; gap: 8px; min-width: 180px; }
+.token-logo { width: 28px; height: 28px; border-radius: 50%; background: #1e2030; flex-shrink: 0; }
+.symbol { font-weight: 600; color: #e2e8f0; }
+.name { font-size: 11px; color: #475569; margin-left: 2px; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; }
+.pct { font-weight: 600; }
+.up { color: #22c55e; }
+.down { color: #ef4444; }
+.age { color: #94a3b8; }
+.addr { color: #475569; font-size: 11px; font-family: monospace; }
+
+footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e2030; display: flex; gap: 20px; flex-wrap: wrap; font-size: 12px; color: #475569; }
+footer a { color: #64748b; text-decoration: none; }
+footer a:hover { color: #94a3b8; }
+.hashtags { color: #1d4ed8; margin-left: auto; }
